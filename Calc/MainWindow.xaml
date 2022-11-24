@@ -5,9 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
-        Title="WPF_CALC" Height="700" Width="500">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="210,93,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        Title="WPF_CALC" Height="531" Width="354"
+        ResizeMode="CanMinimize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0"/>
+            <GradientStop Color="#A3AAAE" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
 
+    <Grid Margin="0,0,0,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="bt_0" Content="0" HorizontalAlignment="Left" Margin="19,393,0,0" VerticalAlignment="Top" Height="70" Width="156" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_0_Click"/>
+        <Button x:Name="bt_1" Content="1" HorizontalAlignment="Left" Margin="19,318,0,0" VerticalAlignment="Top" Height="70" Width="78" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_1_Click"/>
+        <Button x:Name="bt_4" Content="4" HorizontalAlignment="Left" Margin="19,243,0,0" VerticalAlignment="Top" Height="70" Width="78" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_4_Click"/>
+        <Button x:Name="bt_7" Content="7" HorizontalAlignment="Left" Margin="19,168,0,0" VerticalAlignment="Top" Height="70" Width="78" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_7_Click"/>
+        <TextBlock x:Name="vers" HorizontalAlignment="Left" Margin="19,91,0,0" TextWrapping="Wrap" Text="WPF_CALC v0.0.0.2" VerticalAlignment="Top" Height="36" Width="78" FontSize="14"/>
+        <Button x:Name="bt_2" Content="2" HorizontalAlignment="Left" Margin="103,318,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_2_Click"/>
+        <Button x:Name="bt_5" Content="5" HorizontalAlignment="Left" Margin="103,243,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_5_Click"/>
+        <Button x:Name="bt_8" Content="8" HorizontalAlignment="Left" Margin="102,168,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_8_Click"/>
+        <Button x:Name="bt_3" Content="3" HorizontalAlignment="Left" Margin="180,318,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_3_Click"/>
+        <Button x:Name="bt_6" Content="6" HorizontalAlignment="Left" Margin="180,243,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_6_Click"/>
+        <Button x:Name="bt_9" Content="9" HorizontalAlignment="Left" Margin="180,168,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_9_Click"/>
+        <Button x:Name="bt_plus" Content="＋" HorizontalAlignment="Left" Margin="257,243,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_plus_Click"/>
+        <Button x:Name="bt_hang" Content="×" HorizontalAlignment="Left" Margin="257,203,0,0" VerticalAlignment="Top" Height="32" Width="72" FontFamily="Open Sans Semibold" FontSize="20" Click="bt_hang_Click"/>
+        <Button x:Name="bt_divide" Content="÷" HorizontalAlignment="Left" Margin="257,168,0,0" VerticalAlignment="Top" Height="30" Width="72" FontFamily="Open Sans Semibold" FontSize="24" Click="bt_divide_Click"/>
+        <Button x:Name="bt_dot" Content="." HorizontalAlignment="Left" Margin="180,393,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_dot_Click"/>
+        <Button x:Name="bt_minus" Content="－" Margin="257,318,0,0" VerticalAlignment="Top" Height="70" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_minus_Click" HorizontalAlignment="Left" Width="72"/>
+        <Button x:Name="bt_equal" Content="＝" Margin="257,393,0,0" VerticalAlignment="Top" Height="70" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_equal_Click" HorizontalAlignment="Left" Width="72"/>
+        <Button x:Name="bt_cls" Content="CLS" HorizontalAlignment="Left" Margin="257,93,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="24" Click="Button_Click"/>
+        <Button x:Name="bt_mode" Content="" HorizontalAlignment="Left" Margin="180,93,0,0" VerticalAlignment="Top" Height="70" Width="72" FontSize="48" FontFamily="Open Sans Semibold" Background="White"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="19,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="76" FontFamily="Open Sans Semibold" FontSize="48" TextAlignment="Right" TextChanged="TextBox1_TextChanged" InputMethod.IsInputMethodEnabled="False" PreviewTextInput="TextBox1_PreviewTextInput" CommandManager.PreviewExecuted="TextBox1_PreviewExecuted"/>
     </Grid>
 </Window>
