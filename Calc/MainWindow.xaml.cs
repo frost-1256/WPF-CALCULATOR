@@ -102,7 +102,7 @@ namespace Calc
 
         private void bt_dot_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("not working");
+            MessageBox.Show("Not available for error avoidance.");
         }
 
         private void bt_equal_Click(object sender, RoutedEventArgs e)

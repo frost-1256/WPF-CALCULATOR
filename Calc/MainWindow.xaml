@@ -32,7 +32,7 @@
         <Button x:Name="bt_plus" Content="＋" HorizontalAlignment="Left" Margin="257,243,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_plus_Click"/>
         <Button x:Name="bt_hang" Content="×" HorizontalAlignment="Left" Margin="257,203,0,0" VerticalAlignment="Top" Height="32" Width="72" FontFamily="Open Sans Semibold" FontSize="20" Click="bt_hang_Click"/>
         <Button x:Name="bt_divide" Content="÷" HorizontalAlignment="Left" Margin="257,168,0,0" VerticalAlignment="Top" Height="30" Width="72" FontFamily="Open Sans Semibold" FontSize="24" Click="bt_divide_Click"/>
-        <Button x:Name="bt_dot" Content="." HorizontalAlignment="Left" Margin="180,393,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_dot_Click"/>
+        <Button x:Name="bt_dot" Content="." HorizontalAlignment="Left" Margin="180,393,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_dot_Click" IsEnabled="False"/>
         <Button x:Name="bt_minus" Content="－" Margin="257,318,0,0" VerticalAlignment="Top" Height="70" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_minus_Click" HorizontalAlignment="Left" Width="72"/>
         <Button x:Name="bt_equal" Content="＝" Margin="257,393,0,0" VerticalAlignment="Top" Height="70" FontFamily="Open Sans Semibold" FontSize="48" Click="bt_equal_Click" HorizontalAlignment="Left" Width="72"/>
         <Button x:Name="bt_cls" Content="CLS" HorizontalAlignment="Left" Margin="257,93,0,0" VerticalAlignment="Top" Height="70" Width="72" FontFamily="Open Sans Semibold" FontSize="24" Click="Button_Click"/>
